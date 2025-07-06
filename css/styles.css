@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    min-height: 100vh;
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.price-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 20px 20px 0px;
+    border-radius: 20px;
+    text-align: center;
+    width: 300px;
+    border: 1px solid;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+}
