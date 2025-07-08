@@ -15,8 +15,8 @@
             <main>
                 <p>You're buisness and online presence is waiting! Select one of our packages below, fill out the form and lets get started together!</p>
                 <section class="price">
-                    <div class="price-box">
-                    <h2>Basic Package</h2>
+                    <div class="pricebox-basic">
+                    <h2 class="price-title">Basic Package</h2>
                         <h3>$500</h3>
                         <ul>
                             <li><strong>Pages: </strong>Up to 3 pages</li>
@@ -32,8 +32,8 @@
                         </ul>
                         <button type="button" class="btn btn-primary">Get Started</button>
                     </div>
-                    <div class="price-box">
-                        <h2>Best Value</h2>
+                    <div class="pricebox-best">
+                        <h2 class="price-title">Best Value</h2>
                         <h3>$1200</h3>
                         <ul>
                             <li><strong>Pages: </strong>Up to 8 pages</li>
@@ -49,8 +49,8 @@
                         </ul>
                         <button type="button" class="btn btn-primary">Get Started</button>
                     </div>
-                    <div class="price-box">
-                        <h2>Pro Package</h2>
+                    <div class="pricebox-pro">
+                        <h2 class="price-title">Pro Package</h2>
                         <h3>Contact Us</h3>
                         <ul>
                             <li><strong>Pages: </strong>Unlimited Pages</li>
@@ -66,6 +66,34 @@
                         </ul>
                         <button type="button" class="btn btn-primary">Get Started</button>
                     </div>
+                </section>
+                <section hidden class="intake-form-section">
+                    <h2 id="consultation">Fill out the form and lets get started!</h2>
+                    <form name="contact" method="POST" class="intake-form">
+                        <label class="required">
+                            Package:
+                            <select name="package">
+                                <option value="basic">Basic Package</option>
+                                <option value="best-value">Best Value Package</option>
+                                <option value="pro">Pro Package</option>
+                            </select>
+                        </label>
+                        <label class="required">
+                            Name: <input type="text" name="name" required placeholder="John Doe">
+                        </label>
+                        <label class="required">
+                            Email <input type="email" name="_replyto" required placeholder="john.doe@gmail.com">
+                        </label>
+                        <label class="required">
+                            Phone number: <input type="tel" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                        </label>
+                        <label>
+                            Buisness name: <input type="text" name="buisness">
+                        </label>
+                        <label>
+                            <button type="submit" class="btn btn-primary">Send Request</button>
+                        </label>
+                    </form>
                 </section>
             </main>
         </div> 
