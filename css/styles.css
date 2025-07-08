@@ -8,6 +8,12 @@ html, body {
     height: 100%;
 }
 
+
+header {
+    margin: 10px 0px 0px 0px;
+    text-align: center;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -20,24 +26,114 @@ html, body {
 .price {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    /*gap: 20px;*/
     padding: 50px 0;
     width: 100%;
     flex-wrap: wrap;
+    color: white;
 }
 
-.price-box {
+.pricebox-basic {
     display: flex;
     flex-direction: column;
+    position: relative;
+    left: 20px;
     justify-content: space-between;
     padding: 20px 20px 20px 0px;
     border-radius: 20px;
     text-align: center;
+    align-items: center;
     width: 300px;
     border: 1px solid;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(179, 179, 179);
+}
+
+.pricebox-basic:hover {
+    transition: transform 0.2s ease-in-out;
+    z-index: 2;
+    transform: scale(1.05);
+}
+
+.pricebox-best {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    justify-content: space-between;
+    padding: 20px 20px 20px 0px;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+    border: 1px solid;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(14, 230, 158);
+}
+
+.pricebox-best:hover {
+    transition: transform 0.2s ease-in-out;
+    z-index: 2;
+    transform: scale(1.05);
+}
+
+.pricebox-pro {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 20px;
+    justify-content: space-between;
+    padding: 20px 20px 20px 0px;
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+    border: 1px solid;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(0, 0, 0);
+}
+
+.pricebox-pro:hover {
+    transition: transform 0.2s ease-in-out;
+    z-index: 2;
+    transform: scale(1.05);
+}
+
+.pricebox-pro:hover {
+    z-index: 2;
 }
 
 ul {
     list-style-type: none;
+}
+
+#intake-form-section {
+    border: 1px solid;
+    position: relative;
+    bottom: 600px;
+    background-color: white;
+}
+
+.intake-form {
+    display: grid;
+    max-width: 600px;
+    margin: 10px auto;
+    gap: 20px;
+}
+
+.intake-form label {
+    display: flex;
+    flex-direction: column;
+}
+
+.intake-form input, .intake-form textarea, .intake-form select {
+    width: 100%;
+    padding: 10px;
+    font-family: inherit;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+#consultation {
+    text-align: center;
 }
