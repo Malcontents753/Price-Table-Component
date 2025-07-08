@@ -107,11 +107,26 @@ ul {
     list-style-type: none;
 }
 
-#intake-form-section {
+.intake-form-section {
     border: 1px solid;
     position: relative;
+    z-index: 2;
     bottom: 600px;
     background-color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .intake-form {
